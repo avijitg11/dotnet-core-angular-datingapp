@@ -13,10 +13,10 @@ export class App implements OnInit {
   private http = inject(HttpClient);
 
   ngOnInit(): void {
-    this.http.get("https://localhost:7065/api/Members").subscribe({
-      next: response => console.log(response),
-      error: error => console.log(error),
-      complete: ()=> console.log("completed")
-    });
+    // this.http.get("https://localhost:7065/api/Members").subscribe({
+    //   next: response => console.log(response),
+    //   error: error => console.log(error),
+    //   complete: ()=> console.log("completed")
+    // });
   }
 }

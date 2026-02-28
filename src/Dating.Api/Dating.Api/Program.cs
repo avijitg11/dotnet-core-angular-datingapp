@@ -32,8 +32,12 @@ builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<IPhotoService, PhotoService>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<LogUserActivity>();
-builder.Services.Configure<CloudinarySettings>(builder.Configuration
-    .GetSection("CloudinarySettings"));
+builder.Services.Configure<CloudinarySettings>(options =>
+{
+    options.CloudName = Environment.GetEnvironmentVariable("CLOUDINARYNAME");
+    options.ApiKey = Environment.GetEnvironmentVariable("CLOUDINARYAPIKEY");
+    options.ApiSecret = Environment.GetEnvironmentVariable("CLOUDINARYAPISECRET");
+});
 builder.Services.AddSignalR();
 builder.Services.AddSingleton<PresenceTracker>();
 
