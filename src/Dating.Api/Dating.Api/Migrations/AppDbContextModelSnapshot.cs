@@ -279,21 +279,21 @@ namespace Dating.Api.Migrations
                         new
                         {
                             Id = "member-id",
-                            ConcurrencyStamp = "af4768b1-a049-429d-ab4b-a7627c277494",
+                            ConcurrencyStamp = "c1dff91c-e79d-48aa-a317-5baca3305bc4",
                             Name = "Member",
                             NormalizedName = "MEMBER"
                         },
                         new
                         {
                             Id = "moderator-id",
-                            ConcurrencyStamp = "b28fe801-6c5a-4fa9-9770-096c47c1daaa",
+                            ConcurrencyStamp = "3a8d60af-2e28-41cd-b30c-0607abdf05bf",
                             Name = "Moderator",
                             NormalizedName = "MODERATOR"
                         },
                         new
                         {
                             Id = "admin-id",
-                            ConcurrencyStamp = "cb7becc7-a3bc-40af-a70b-a4761ef91a15",
+                            ConcurrencyStamp = "fd72901c-b80a-489c-bd41-855df4c298d0",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         });

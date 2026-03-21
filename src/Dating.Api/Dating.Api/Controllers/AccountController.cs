@@ -1,6 +1,4 @@
-﻿using Azure;
-using Azure.Core;
-using Dating.Api.DTOs;
+﻿using Dating.Api.DTOs;
 using Dating.Api.Entities;
 using Dating.Api.Extensions;
 using Dating.Api.Interfaces;
