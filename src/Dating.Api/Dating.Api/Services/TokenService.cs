@@ -19,10 +19,10 @@ namespace Dating.Api.Services
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenKey));
 
             var claims = new List<Claim>
-        {
-            new(ClaimTypes.Email, user.Email!),
-            new(ClaimTypes.NameIdentifier, user.Id)
-        };
+            {
+                new(ClaimTypes.Email, user.Email!),
+                new(ClaimTypes.NameIdentifier, user.Id)
+            };
 
             var roles = await userManager.GetRolesAsync(user);
 

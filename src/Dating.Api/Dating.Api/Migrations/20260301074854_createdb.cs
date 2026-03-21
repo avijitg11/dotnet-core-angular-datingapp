@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Dating.Api.Migrations
 {
     /// <inheritdoc />
-    public partial class createdatabase : Migration
+    public partial class createdb : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -296,9 +296,9 @@ namespace Dating.Api.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "admin-id", "cb7becc7-a3bc-40af-a70b-a4761ef91a15", "Admin", "ADMIN" },
-                    { "member-id", "af4768b1-a049-429d-ab4b-a7627c277494", "Member", "MEMBER" },
-                    { "moderator-id", "b28fe801-6c5a-4fa9-9770-096c47c1daaa", "Moderator", "MODERATOR" }
+                    { "admin-id", "fd72901c-b80a-489c-bd41-855df4c298d0", "Admin", "ADMIN" },
+                    { "member-id", "c1dff91c-e79d-48aa-a317-5baca3305bc4", "Member", "MEMBER" },
+                    { "moderator-id", "3a8d60af-2e28-41cd-b30c-0607abdf05bf", "Moderator", "MODERATOR" }
                 });
 
             migrationBuilder.CreateIndex(

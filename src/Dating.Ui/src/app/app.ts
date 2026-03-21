@@ -1,22 +1,14 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, inject, OnInit, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { Nav } from "../layout/nav/nav";
+import { Router, RouterOutlet } from '@angular/router';
+import { ConfirmDialog } from "../shared/confirm-dialog/confirm-dialog";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Nav, RouterOutlet, ConfirmDialog],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
-export class App implements OnInit {  
-  protected readonly title = signal('Dating.Ui');
-  private http = inject(HttpClient);
-
-  ngOnInit(): void {
-    // this.http.get("https://localhost:7065/api/Members").subscribe({
-    //   next: response => console.log(response),
-    //   error: error => console.log(error),
-    //   complete: ()=> console.log("completed")
-    // });
-  }
+export class App {
+  protected router = inject(Router);
 }
