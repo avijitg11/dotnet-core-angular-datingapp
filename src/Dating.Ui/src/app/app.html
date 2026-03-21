@@ -1,11 +1,9 @@
 <app-nav />
-
-<div 
-    [class.mt-24]="router.url !== '/'"
-    [class.container]="router.url !== '/'"
-    [class.mx-auto]="router.url !== '/'"
->
-    <router-outlet />
+<div class="w-fit px-10">
+    <div [class.mt-24]="router.url !== '/'" [class.container]="router.url !== '/'"
+        [class.mx-auto]="router.url !== '/'">
+        <router-outlet />
+    </div>
 </div>
-
 <app-confirm-dialog />
+
